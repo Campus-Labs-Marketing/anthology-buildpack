@@ -4,12 +4,12 @@ echo "-----> Found a pathupdates.txt"
 
 cd $3
 
-PUBLIC_IMAGES="public/imgs/"
+#PUBLIC_IMAGES="public/imgs/"
 IMAGES="/imgs/"
 
 REMOTE_IMAGES=$(cat Images)
 
-find $1 -type f -exec sed -i "s|$PUBLIC_IMAGES|$REMOTE_IMAGES|g" {} +
+#find $1 -type f -exec sed -i "s|$PUBLIC_IMAGES|$REMOTE_IMAGES|g" {} +
 find $1 -type f -exec sed -i "s|$IMAGES|$REMOTE_IMAGES|g" {} +
 
 # exit 0
